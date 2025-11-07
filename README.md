@@ -88,24 +88,51 @@ npm run dev
 
 Top-level folder: `react-task-manager/`
 
-Key files and folders inside `react-task-manager/`:
+```
+react-task-manager/
+├── index.html               # Vite HTML entry point
+├── package.json            # Dependencies and scripts
+├── vite.config.js         # Vite configuration
+├── tailwind.config.js     # Tailwind CSS config
+├── postcss.config.js      # PostCSS plugins config
+├── eslint.config.js       # ESLint configuration
+└── src/                   # Source code
+    ├── main.jsx          # Application entry point
+    ├── App.jsx           # Root app component
+    ├── App.css           # App-specific styles
+    ├── index.css         # Global styles
+    ├── api/              # API services and endpoints
+    │   └── userService.js
+    ├── assets/           # Static assets (images, fonts)
+    ├── components/       # Reusable UI components
+    │   ├── layout/      # Layout components
+    │   │   ├── Navbar.jsx
+    │   │   └── Footer.jsx
+    │   ├── tasks/       # Task-related components
+    │   │   └── TaskManager.jsx
+    │   ├── ui/          # Generic UI components
+    │   │   ├── Button.jsx
+    │   │   └── Card.jsx
+    │   └── users/       # User-related components
+    │       └── UsersList.jsx
+    ├── context/         # React Context providers
+    │   └── ThemeContext.jsx
+    ├── hooks/           # Custom React hooks
+    │   └── useLocalStorage.js
+    ├── pages/           # Page components
+    │   └── Home.jsx
+    └── utils/           # Utility functions
+        └── constants.js
+```
 
-- `index.html` — Vite HTML entry
-- `src/main.jsx` — application entry (React DOM mount)
-- `src/App.jsx` — root app component
-- `src/index.css`, `src/App.css` — global and app styles
-- `src/api/userService.js` — thin API layer for user data
-- `src/components/` — grouped UI components
-   - `layout/` — `Navbar.jsx`, `Footer.jsx`
-   - `tasks/` — `TaskManager.jsx` (task features)
-   - `ui/` — small reusable UI pieces: `Button.jsx`, `Card.jsx`
-   - `users/` — `UsersList.jsx`
-- `src/context/ThemeContext.jsx` — theme provider & hook
-- `src/hooks/useLocalStorage.js` — custom hook to sync state with localStorage
-- `src/pages/Home.jsx` — sample page
-- `src/utils/constants.js` — project-wide constants
-
-There are additional config files in the repo root of the workspace (for the whole exercise): `tailwind.config.js`, `postcss.config.js`, `vite.config.js`, and ESLint config.
+Each directory serves a specific purpose:
+- `api/`: Services for external API communication
+- `assets/`: Static files like images, icons, and fonts
+- `components/`: Reusable UI components grouped by feature/type
+- `context/`: React Context for global state management
+- `hooks/`: Custom React hooks for shared logic
+- `pages/`: Full page components with routing
+- `utils/`: Helper functions and constants
 
 ## Development notes & conventions
 
