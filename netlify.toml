@@ -1,0 +1,10 @@
+[build]
+  # Run the build from the react-task-manager subfolder
+  base = "react-task-manager"
+  command = "npm run build"
+  # Vite outputs to `dist` by default
+  publish = "react-task-manager/dist"
+
+[context.production.environment]
+# Optional: specify Node version used by Netlify (uncomment and set if needed)
+# NODE_VERSION = "18"
