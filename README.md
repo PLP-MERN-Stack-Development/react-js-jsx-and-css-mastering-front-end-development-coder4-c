@@ -2,6 +2,8 @@
 
 This repository contains a small React application (starter/assignment) that demonstrates building a task manager UI using React, Vite, and Tailwind CSS. It includes reusable components, context for theming, custom hooks, and a simple API layer.
 
+Live demo: https://taskmanager34.netlify.app/
+
 ## Table of contents
 - Project overview
 - Features
@@ -167,6 +169,8 @@ This repository uses no specific license file by default. Add a `LICENSE` file i
 ## Contact / Author
 
 If this is your assignment workspace, you're the author — update this section with your name and contact info if you want to share it.
+
+Live demo: https://taskmanager34.netlify.app/
 
 ---
 
