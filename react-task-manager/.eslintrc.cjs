@@ -1,8 +1,9 @@
-export default {
+module.exports = {
   root: true,
   env: {
     browser: true,
-    es2020: true
+    es2020: true,
+    node: true
   },
   extends: [
     'eslint:recommended',
@@ -10,7 +11,6 @@ export default {
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended'
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -23,13 +23,14 @@ export default {
       version: 'detect'
     }
   },
-  plugins: ['react-refresh'],
+  plugins: ['react', 'react-hooks', 'react-refresh'],
   rules: {
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true }
     ],
     'no-unused-vars': 'warn',
-    'react/prop-types': 'off'
+    'react/prop-types': 'off',
+    'react/react-in-jsx-scope': 'off'
   }
 }
